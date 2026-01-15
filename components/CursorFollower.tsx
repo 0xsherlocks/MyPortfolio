@@ -14,8 +14,8 @@ export default function CursorFollower() {
 
     useEffect(() => {
         const moveCursor = (e: MouseEvent) => {
-            cursorX.set(e.clientX - 16)
-            cursorY.set(e.clientY - 16)
+            cursorX.set(e.clientX - 20)
+            cursorY.set(e.clientY - 20)
             setCursorXY({ x: e.clientX, y: e.clientY })
         }
 
@@ -26,16 +26,14 @@ export default function CursorFollower() {
     return (
         <>
             <motion.div
-                className="fixed top-0 left-0 w-8 h-8 border border-acid-green rounded-full pointer-events-none z-[9999] mix-blend-difference"
+                className="fixed top-0 left-0 w-10 h-10 rounded-full pointer-events-none z-[9999] backdrop-blur-[2px] bg-white/5 border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-colors duration-200"
                 style={{
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
                 }}
-            >
-                <div className="absolute inset-0 bg-acid-green/20 rounded-full blur-sm" />
-            </motion.div>
+            />
             <div
-                className="fixed w-2 h-2 bg-white rounded-full pointer-events-none z-[9999]"
+                className="fixed top-0 left-0 w-1.5 h-1.5 bg-white rounded-full pointer-events-none z-[9999] shadow-[0_0_5px_rgba(255,255,255,0.8)]"
                 style={{
                     left: cursorXY.x,
                     top: cursorXY.y,
