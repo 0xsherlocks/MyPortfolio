@@ -86,7 +86,7 @@ export default function Hero() {
               className="mb-8"
             >
               <h3 className="text-xl md:text-3xl font-display font-bold text-[#00d4ff] tracking-wide">
-                Digital Forensics & AI Architect
+                Digital Forensics & AI Systems Enthusiast
               </h3>
             </motion.div>
 
