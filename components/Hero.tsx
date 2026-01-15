@@ -40,12 +40,12 @@ export default function Hero() {
 
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-0 lg:min-h-[80vh]">
 
           {/* LEFT COLUMN: Text Content */}
           <motion.div
             style={{ y: yText }}
-            className="flex flex-col items-start text-left order-2 lg:order-1"
+            className="flex flex-col items-start text-left order-1 lg:order-1"
           >
 
             {/* Status Badge */}
@@ -73,7 +73,7 @@ export default function Hero() {
               <h2 className="text-xl md:text-3xl font-display font-medium text-white mb-2 tracking-wide">
                 Hi, I'm
               </h2>
-              <h1 className="text-5xl sm:text-7xl md:text-8xl font-display font-bold text-white tracking-tight mb-4 leading-[1.1]">
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-display font-bold text-white tracking-tight mb-4 leading-[1.1]">
                 Gulshan <br /> Kumar
               </h1>
             </motion.div>
@@ -86,7 +86,7 @@ export default function Hero() {
               className="mb-8"
             >
               <h3 className="text-xl md:text-3xl font-display font-bold text-[#00d4ff] tracking-wide">
-                Digital Forensics & AI Systems Enthusiast
+                Digital Forensics & AI Architect
               </h3>
             </motion.div>
 
@@ -168,7 +168,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.0, ease: "easeOut" }}
-            className="relative h-[500px] md:h-[700px] w-full flex items-center justify-end order-1 lg:order-2"
+            className="relative h-[350px] md:h-[700px] w-full flex items-center justify-end order-2 lg:order-2"
           >
             {/* Smoke Effect - Atmospheric layer */}
             <div className="absolute inset-0 -z-10 overflow-hidden opacity-60 mix-blend-screen">
