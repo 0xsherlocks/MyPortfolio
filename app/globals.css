@@ -25,6 +25,18 @@
     color: #ffffff;
     overflow-x: hidden;
     font-family: Outfit, sans-serif;
+    cursor: none;
+    /* Hide default cursor */
+  }
+
+  /* Ensure cursor is hidden on interactive elements too */
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label {
+    cursor: none !important;
   }
 
   /* Focus indicators for accessibility */
