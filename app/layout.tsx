@@ -144,12 +144,8 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className="bg-primary-bg text-text-primary font-main antialiased selection:bg-acid-green selection:text-black">
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8985985740593673"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8985985740593673"
+     crossorigin="anonymous"></script>
         <div className="relative min-h-screen">
           <ClientLayout>{children}</ClientLayout>
         </div>
